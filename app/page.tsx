@@ -72,13 +72,13 @@ export default function Home() {
         </h3>
         <ProjectGrid projects={projects} />
         <h2 className="mt-10">Fun experiments</h2>
-        <h3>Just a sample of things i've built for fun</h3>
+        <h3>Just a sample of things i&apos;ve built for fun</h3>
         <ProjectGrid projects={funProjects} />
 
         <div>
           <h2 className="mt-10">Contact</h2>
           <p>
-            If you'd like to get in touch, please email me at{' '}
+            If you&apos;d like to get in touch, please email me at{' '}
             <a href="mailto:andrewceharris@gmail.com">
               andrewceharris@gmail.com
             </a>
