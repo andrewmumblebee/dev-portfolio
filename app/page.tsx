@@ -2,6 +2,24 @@ import ProjectGrid from '@/components/ProjectGrid'
 import squp from '../components/squaredup.png'
 import Nav from '@/components/Nav'
 import Header from '@/components/Header'
+import { Metadata } from 'next'
+
+export const metadata = {
+  title: 'DevignatorDrew - The portfolio of Andrew Harris',
+  description:
+    'Andrew Harris is a Frontend Developer based in the UK who loves making fun and creative web experiences.',
+  openGraph: {
+    images: [
+      {
+        url: 'https://devignatordrew.com/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'DevignatorDrew - The portfolio of Andrew Harris',
+      },
+    ],
+  },
+} as Metadata
+
 export default function Home() {
   const projects = [
     {
