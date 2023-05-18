@@ -19,6 +19,7 @@ module.exports = {
         gunmetal: '#293241',
         emerald: '#6FD08C',
         calm: '#E5E5E5',
+        grey: '#BFBFBF',
       },
       fontFamily: {
         body: ['var(--font-body)'],

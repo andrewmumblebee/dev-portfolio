@@ -35,7 +35,7 @@ h1 {
 }
 
 h2 {
-  @apply text-4xl font-display;
+  @apply text-7xl text-emerald font-display;
 }
 
 @supports (-webkit-text-stroke: 2px theme(colors.emerald)) {
