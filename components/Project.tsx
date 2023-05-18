@@ -1,18 +1,20 @@
 import Image, { StaticImageData } from 'next/image'
 
+export type TProject = {
+  title: string
+  description: string
+  technologies: string
+  image: string | StaticImageData
+  link: string
+}
+
 export default function Project({
   title,
   description,
   technologies,
   image,
   link,
-}: {
-  title: string
-  description: string
-  technologies: string
-  image: string | StaticImageData
-  link: string
-}) {
+}: TProject) {
   return (
     <div className="">
       <Image src={image} width={400} height={150} alt="" />

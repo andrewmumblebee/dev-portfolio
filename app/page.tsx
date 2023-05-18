@@ -66,8 +66,9 @@ export default function Home() {
       <div>
         <h2 className="mt-10">Portfolio</h2>
         <h3>
-          A couple of the projects i’ve worked on recently. Please get in touch
-          if you’d like further examples or an explanation of the projects.
+          A couple of the projects i&apos;ve worked on recently. Please get in
+          touch if you&apos;d like further examples or an explanation of the
+          projects.
         </h3>
         <ProjectGrid projects={projects} />
         <h2 className="mt-10">Fun experiments</h2>
