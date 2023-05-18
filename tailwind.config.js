@@ -6,7 +6,24 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+    },
+    container: {
+      center: true,
+    },
     extend: {
+      colors: {
+        gunmetal: '#293241',
+        emerald: '#6FD08C',
+        calm: '#E5E5E5',
+      },
+      fontFamily: {
+        body: ['var(--font-body)'],
+        display: ['var(--font-display)'],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
