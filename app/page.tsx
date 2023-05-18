@@ -8,6 +8,9 @@ export const metadata = {
   title: 'DevignatorDrew - The portfolio of Andrew Harris',
   description:
     'Andrew Harris is a Frontend Developer based in the UK who loves making fun and creative web experiences.',
+  twitter: {
+    card: 'summary_large_image',
+  },
   openGraph: {
     images: [
       {
