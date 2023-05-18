@@ -2,6 +2,7 @@ import classNames from 'classnames'
 import './globals.css'
 import { Urbanist } from 'next/font/google'
 import localFont from 'next/font/local'
+import { Analytics } from '@vercel/analytics/react'
 
 const urbanist = Urbanist({
   subsets: ['latin'],
@@ -32,6 +33,7 @@ export default function RootLayout({
         )}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   )
