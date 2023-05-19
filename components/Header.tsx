@@ -7,7 +7,7 @@ export default function Header() {
       <div className="lg:flex items-center gap-3">
         <Image
           src={avatar}
-          className="w-96 mx-auto lg:mx-0 block max-w-[70%]"
+          className="flex-[0_0_380px] w-[70%] mx-auto lg:mx-0 block max-w-[380px]"
           alt="avatar"
         />
         <div className="lg:ml-11 mt-8 lg:mt-0">
