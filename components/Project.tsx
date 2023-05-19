@@ -6,7 +6,7 @@ import {useMediaQuery} from 'react-responsive'
 
 export type TProject = {
   title: string
-  description: string
+  description?: string
   technologies: string
   previewVideo?: string
   image: string | StaticImageData
@@ -59,7 +59,7 @@ export default function Project({
         />
       </div>
       <h3 className="text-2xl font-display mt-4">{title}</h3>
-      <p className="white mt-1 text-lg">{description}</p>
+      {description && <p className="white mt-1 text-lg">{description}</p>}
       <p className="text-grey mt-1">{technologies}</p>
       <a
         href={link}
