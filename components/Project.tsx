@@ -1,7 +1,8 @@
 'use client'
 import classNames from 'classnames'
 import Image, {StaticImageData} from 'next/image'
-import {useRef, useState} from 'react'
+import {useRef} from 'react'
+import {useMediaQuery} from 'react-responsive'
 
 export type TProject = {
   title: string
@@ -22,6 +23,7 @@ export default function Project({
   className
 }: TProject & {className?: string}) {
   const videoRef = useRef<HTMLVideoElement | null>(null)
+  const isDesktop = useMediaQuery({query: '(min-width: 1024)'})
 
   return (
     <article className={classNames(className, '')}>
@@ -30,7 +32,7 @@ export default function Project({
         onMouseEnter={() => videoRef.current?.play()}
         onMouseLeave={() => videoRef.current?.pause()}
       >
-        {previewVideo && (
+        {isDesktop && previewVideo && (
           <video
             ref={videoRef}
             className="absolute inset-0"
