@@ -50,6 +50,10 @@ ul {
   @apply mt-6;
 }
 
+.highlight {
+  @apply text-emerald;
+}
+
 @supports (-webkit-text-stroke: 2px theme(colors.emerald)) {
   .highlight {
     @apply text-gunmetal;

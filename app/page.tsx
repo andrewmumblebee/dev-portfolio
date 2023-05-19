@@ -7,7 +7,7 @@ import Contact from '@/components/Contact'
 import About from '@/components/About'
 
 export const metadata = {
-  title: 'DevignatorDrew - The portfolio of Andrew Harris',
+  title: 'DevignatorDrew 👋 - The portfolio of Andrew Harris',
   description:
     'Andrew Harris is a Frontend Developer based in the UK who loves making fun and creative web experiences.',
   twitter: {

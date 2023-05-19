@@ -4,6 +4,29 @@ import mail from '@/public/mail.svg'
 import codepen from '@/public/codepen.svg'
 import Image from 'next/image'
 
+const links = [
+  {
+    href: 'mailto:andrewceharris@gmail.com',
+    label: 'andrewceharris@gmail.com',
+    icon: mail,
+  },
+  {
+    href: 'https://linkedin.com/in/andrew-harris-a0775410a',
+    label: 'linkedin.com/in/andrew-harris-a0775410a',
+    icon: linkedin,
+  },
+  {
+    href: 'https://github.com/andrewmumblebee',
+    label: 'github.com/andrewmumblebee',
+    icon: github,
+  },
+  {
+    href: 'https://codepen.io/andrewmumblebee',
+    label: 'codepen.io/andrewmumblebee',
+    icon: codepen,
+  },
+]
+
 function ContactLink({
   href,
   label,
@@ -21,29 +44,6 @@ function ContactLink({
   )
 }
 export default function Contact() {
-  const links = [
-    {
-      href: 'mailto:andrewceharris@gmail.com',
-      label: 'andrewceharris@gmail.com',
-      icon: mail,
-    },
-    {
-      href: 'https://linkedin.com/in/andrew-harris-a0775410a',
-      label: 'linkedin.com/in/andrew-harris-a0775410a',
-      icon: linkedin,
-    },
-    {
-      href: 'https://github.com/andrewmumblebee',
-      label: 'github.com/andrewmumblebee',
-      icon: github,
-    },
-    {
-      href: 'https://codepen.io/andrewmumblebee',
-      label: 'codepen.io/andrewmumblebee',
-      icon: codepen,
-    },
-  ]
-
   return (
     <section id="contact" className="mt-24 mb-24 container">
       <h2>Contact</h2>
