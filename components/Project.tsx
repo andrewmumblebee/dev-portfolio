@@ -19,7 +19,7 @@ export default function Project({
 }: TProject & { className?: string }) {
   return (
     <article className={classNames(className, '')}>
-      <Image src={image} width={400} height={150} alt="" />
+      <Image src={image} width={504} height={323} sizes="40vw" alt="" />
       <h3 className="text-2xl font-display mt-4">{title}</h3>
       <p className="white mt-1 text-lg">{description}</p>
       <p className="text-grey mt-1">{technologies}</p>
