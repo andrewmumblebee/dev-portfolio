@@ -8,7 +8,7 @@ export type TProject = {
   title: string
   description: string
   technologies: string
-  previewVideo: string
+  previewVideo?: string
   image: string | StaticImageData
   link: string
 }
