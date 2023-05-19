@@ -19,7 +19,7 @@ const links = [
 
 export default function Nav() {
   return (
-    <nav className="container mt-16">
+    <nav className="container mt-8 lg:mt-16">
       <ul className="flex gap-x-14">
         <li>
           <a
@@ -32,7 +32,10 @@ export default function Nav() {
           </a>
         </li>
         {links.map(({ href, label }) => (
-          <li key={href} className="hidden lg:block">
+          <li
+            key={href}
+            className="hidden last:ml-auto lg:last:ml-0 last:block lg:block"
+          >
             <a
               href={href}
               className="focus:text-emerald hover:text-emerald transition-colors duration-200"
