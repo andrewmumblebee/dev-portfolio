@@ -36,7 +36,7 @@ export default function Project({
           <video
             ref={videoRef}
             className="absolute inset-0"
-            preload="auto"
+            preload="none"
             muted
             loop
           >
