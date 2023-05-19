@@ -52,7 +52,7 @@ export default function Project({
           width={504}
           height={323}
           sizes="40vw"
-          className="rounded w-full"
+          className="w-full"
           alt=""
         />
       </div>
@@ -63,6 +63,8 @@ export default function Project({
         href={link}
         className="text-emerald font-display focus:text-white hover:text-white transition-colors duration-200 mt-3 inline-block"
         rel="noreferrer noopener"
+        onMouseEnter={() => videoRef.current?.play()}
+        onMouseLeave={() => videoRef.current?.pause()}
         onFocus={() => videoRef.current?.play()}
         onBlur={() => videoRef.current?.pause()}
       >
