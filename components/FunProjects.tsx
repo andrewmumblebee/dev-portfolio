@@ -61,19 +61,19 @@ const projects = [
 
 export default function FunProjects() {
   return (
-    <section id="fun" className="mt-24">
-      <div className="container">
-        <h2>Fun experiments</h2>
+    <section id="fun" className="mt-24 container">
+      <div className="">
+        <h2>Fun stuff</h2>
         <p className="text-xl">
           Just a sample of things i&apos;ve built for fun
         </p>
       </div>
-      <div className="mt-8 flex overflow-auto container scrollbar">
+      <div className="mt-8 flex overflow-auto scrollbar gap-x-8 snap-x snap-proximity">
         {projects.map((project, idx) => (
           <Project
             {...project}
             key={idx}
-            className="px-2 flex-[0_0_45%] pb-8"
+            className="flex-[0_0_80%] lg:flex-[0_0_45%] pb-8 snap-start"
           />
         ))}
       </div>

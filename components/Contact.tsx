@@ -12,17 +12,17 @@ const links = [
   },
   {
     href: 'https://linkedin.com/in/andrew-harris-a0775410a',
-    label: 'linkedin.com/in/andrew-harris-a0775410a',
+    label: 'andrew-harris-a0775410a',
     icon: linkedin,
   },
   {
     href: 'https://github.com/andrewmumblebee',
-    label: 'github.com/andrewmumblebee',
+    label: 'andrewmumblebee',
     icon: github,
   },
   {
     href: 'https://codepen.io/andrewmumblebee',
-    label: 'codepen.io/andrewmumblebee',
+    label: 'andrewmumblebee',
     icon: codepen,
   },
 ]

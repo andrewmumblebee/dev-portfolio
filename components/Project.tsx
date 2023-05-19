@@ -24,7 +24,7 @@ export default function Project({
         width={504}
         height={323}
         sizes="40vw"
-        className="rounded"
+        className="rounded w-full"
         alt=""
       />
       <h3 className="text-2xl font-display mt-4">{title}</h3>
