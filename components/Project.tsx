@@ -23,7 +23,7 @@ export default function Project({
   className
 }: TProject & {className?: string}) {
   const videoRef = useRef<HTMLVideoElement | null>(null)
-  const isDesktop = useMediaQuery({query: '(min-width: 1024)'})
+  const isDesktop = useMediaQuery({query: '(min-width: 1024px)'})
 
   return (
     <article className={classNames(className, '')}>
