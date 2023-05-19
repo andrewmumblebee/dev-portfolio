@@ -26,6 +26,7 @@ export default function Project({
       <a
         href={link}
         className="text-emerald font-display hover:underline mt-3 inline-block"
+        rel="noreferrer noopener"
       >
         View site
       </a>
