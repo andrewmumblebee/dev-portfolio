@@ -3,7 +3,7 @@ import avatar from './avatar.svg'
 
 export default function Header() {
   return (
-    <header className="mt-10">
+    <header className="mt-10 container">
       <div className="flex items-center gap-3">
         <Image src={avatar} className="w-96" alt="avatar" />
         <div className="lg:ml-11">

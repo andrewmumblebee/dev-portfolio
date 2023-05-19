@@ -1,10 +1,43 @@
-import ProjectGrid from './ProjectGrid'
+'use client'
 import squp from '../components/squaredup.png'
+import Project from './Project'
 
 export default function FunProjects() {
   const projects = [
     {
-      title: 'nightpeloton.com',
+      title: 'SVG Rocket Animation',
+      description:
+        'A site i built and designed for a non-profit events company. With a custom built mix player. This was built mobile first.',
+      technologies: 'SVG, GSAP',
+      image: squp,
+      link: 'https://codepen.io/andrewmumblebee/pen/abRobQx/ddbf198342c2161ebe12ae9555363b74',
+    },
+    {
+      title: 'SVG Notepad Animation',
+      description:
+        'A site i built and designed for a non-profit events company. With a custom built mix player. This was built mobile first.',
+      technologies: 'SVG, GSAP',
+      image: squp,
+      link: 'https://codepen.io/andrewmumblebee/pen/NWLoQxG/f3acde6728e8ea5ae7277c6c29c95c12',
+    },
+    {
+      title: 'SVG Magnifying Glass Animation',
+      description:
+        'A site i built and designed for a non-profit events company. With a custom built mix player. This was built mobile first.',
+      technologies: 'SVG, GSAP',
+      image: squp,
+      link: 'https://codepen.io/andrewmumblebee/pen/vYzPjqY/434cbc72bc7c12a9213e7accf414cb70',
+    },
+    {
+      title: 'Looping dots',
+      description:
+        'A site i built and designed for a non-profit events company. With a custom built mix player. This was built mobile first.',
+      technologies: 'SVG, GSAP',
+      image: squp,
+      link: 'https://codepen.io/andrewmumblebee/pen/OJEGMmX/9562dbad3530ef54f516d12fbd4680d6',
+    },
+    {
+      title: 'Three.js Galaxy',
       description:
         'A site i built and designed for a non-profit events company. With a custom built mix player. This was built mobile first.',
       technologies:
@@ -13,37 +46,38 @@ export default function FunProjects() {
       link: 'https://nightpeloton.com',
     },
     {
-      title: 'swag.squaredup.com',
-      description:
-        "This is one of my favourite projects i've built and designed. A lego minifigure builder with an admin UI for managing inventory for different events. Users could build their own minifigure, order it, see a build tracker, and get a dynamic sticker generated for them based on their order when they picked up their order at events our company attended. Utilising plenty of lego microanimations and Star Wars quotes for a bit of fun. Also was built optimized for mobile first, utilising loading techniques to keep it light on conference wifi & work across low spec devices.",
-      technologies: 'Next.js, TypeScript, GSAP, TailwindCSS, DynamoDB',
+      title: 'Loading Spinner',
+      description: 'A looping spinner i designed.',
+      technologies: 'CSS',
       image: squp,
-      link: 'https://swag.squaredup.com/qr/testevent',
+      link: 'https://nightpeloton.com',
     },
     {
-      title: 'squaredup.com',
+      title: 'CSS Metaballs',
       description:
-        "The main company website for SquaredUp, i've lead most of this project from Umbraco to WordPress to Headless WordPress. Most of the motion on the site was built by me, some of the scroll based animations have been removed over time. You can find a couple preserved version in the fun things section. This was built for desktop first.",
-      technologies: 'Next.js, TypeScript, WordPress, GSAP, Gutenberg, SCSS',
+        'A random thing i built ages ago when playing with metaballs using css filters',
+      technologies: 'CSS',
       image: squp,
-      link: 'https://squaredup.com',
-    },
-    {
-      title: 'ds.squaredup.com',
-      description:
-        'The secondary company website for SquaredUp. Another site with plenty of motion and microinteractions. Including a custom build pricing calculator and checkout system utilising Stripe. Along with squaredup.com i architected the project, which has grown substantially with multiple templates and hundreds of pages of content, whilst pre-building all pages and still maintaing a build time of under 5 minutes.',
-      technologies:
-        'Next.js, TypeScript, WordPress, GSAP, Stripe, Gutenberg, SCSS',
-      image: squp,
-      link: 'https://ds.squaredup.com',
+      link: 'https://nightpeloton.com',
     },
   ]
 
   return (
     <section id="fun" className="mt-24">
-      <h2>Fun experiments</h2>
-      <h3>Just a sample of things i&apos;ve built for fun</h3>
-      <ProjectGrid projects={projects} />
+      <div className="container">
+        <h2>Fun experiments</h2>
+        <p>Just a sample of things i&apos;ve built for fun</p>
+      </div>
+
+      <div className="mt-8 flex overflow-auto container scrollbar">
+        {projects.map((project, idx) => (
+          <Project
+            {...project}
+            key={idx}
+            className="px-2 flex-[0_0_45%] pb-8"
+          />
+        ))}
+      </div>
     </section>
   )
 }

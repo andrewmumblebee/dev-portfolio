@@ -30,6 +30,10 @@ body {
 
 */
 
+body {
+  @apply text-lg;
+}
+
 h1 {
   @apply text-8xl font-display;
 }
@@ -38,9 +42,36 @@ h2 {
   @apply text-7xl text-emerald font-display;
 }
 
+p {
+  @apply mt-5 max-w-prose;
+}
+
+ul {
+  @apply mt-6;
+}
+
 @supports (-webkit-text-stroke: 2px theme(colors.emerald)) {
   .highlight {
     @apply text-gunmetal;
     -webkit-text-stroke: 2px theme(colors.emerald);
   }
+}
+
+.scrollbar {
+  /* Foreground, Background */
+  scrollbar-color: theme(colors.emerald) theme(colors.calm);
+}
+.scrollbar::-webkit-scrollbar {
+  width: 10px; /* Mostly for vertical scrollbars */
+  height: 10px; /* Mostly for horizontal scrollbars */
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  /* Foreground */
+  background: theme(colors.emerald);
+  border-radius: 10px;
+}
+.scrollbar::-webkit-scrollbar-track {
+  /* Background */
+  background: theme(colors.calm);
+  border-radius: 10px;
 }

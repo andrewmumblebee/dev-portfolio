@@ -1,3 +1,9 @@
+import github from '@/public/github.svg'
+import linkedin from '@/public/linkedin.svg'
+import mail from '@/public/mail.svg'
+import codepen from '@/public/codepen.svg'
+import Image from 'next/image'
+
 function ContactLink({
   href,
   label,
@@ -8,41 +14,48 @@ function ContactLink({
   icon?: string
 }) {
   return (
-    <a href={href} className="block mt-1">
+    <a href={href} className="block">
+      <Image src={icon} className="inline-block mr-4" />
       {label}
     </a>
   )
 }
 export default function Contact() {
+  const links = [
+    {
+      href: 'mailto:andrewceharris@gmail.com',
+      label: 'andrewceharris@gmail.com',
+      icon: mail,
+    },
+    {
+      href: 'https://linkedin.com/in/andrew-harris-a0775410a',
+      label: 'linkedin.com/in/andrew-harris-a0775410a',
+      icon: linkedin,
+    },
+    {
+      href: 'https://github.com/andrewmumblebee',
+      label: 'github.com/andrewmumblebee',
+      icon: github,
+    },
+    {
+      href: 'https://codepen.io/andrewmumblebee',
+      label: 'codepen.io/andrewmumblebee',
+      icon: codepen,
+    },
+  ]
+
   return (
-    <section id="contact" className="mt-24">
+    <section id="contact" className="mt-24 mb-24 container">
       <h2>Contact</h2>
-      <p>Please feel free to get in touch via email if you want a chat 😊</p>
+      <p className="max-w-prose">
+        Please feel free to get in touch via email if you want a chat 😊
+      </p>
       <ul>
-        <li>
-          <ContactLink
-            href="mailto:andrewceharris@gmail.com"
-            label="andrewceharris@gmail.com"
-          />
-        </li>
-        <li>
-          <ContactLink
-            href="https://linkedin.com/in/andrew-harris-a0775410a"
-            label="linkedin.com/in/andrew-harris-a0775410a"
-          />
-        </li>
-        <li>
-          <ContactLink
-            href="https://github.com/andrewmumblebee"
-            label="github.com/andrewmumblebee"
-          />
-        </li>
-        <li>
-          <ContactLink
-            href="https://codepen.io/andrewmumblebee"
-            label="codepen.io/andrewmumblebee"
-          />
-        </li>
+        {links.map((link) => (
+          <li key={link.href} className="mt-6">
+            <ContactLink {...link} />
+          </li>
+        ))}
       </ul>
     </section>
   )

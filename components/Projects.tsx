@@ -40,13 +40,13 @@ export default function Projects() {
   ]
 
   return (
-    <section id="portfolio" className="mt-24">
+    <section id="portfolio" className="mt-24 container">
       <h2>Portfolio</h2>
-      <h3>
+      <p>
         A couple of the projects i&apos;ve worked on recently. Please get in
         touch if you&apos;d like further examples or an explanation of the
         projects.
-      </h3>
+      </p>
       <ProjectGrid projects={projects} />
     </section>
   )
