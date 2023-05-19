@@ -39,7 +39,7 @@ function ContactLink({
   return (
     <a
       href={href}
-      className="block focus:text-emerald hover:text-emerald transition-colors duration-200"
+      className="block focus:text-emerald hover:text-emerald transition-colors duration-200 flex items-start"
     >
       <Image src={icon} className="inline-block mr-4" alt="" />
       {label}
@@ -55,7 +55,7 @@ export default function Contact() {
       </p>
       <ul>
         {links.map((link) => (
-          <li key={link.href} className="mt-6">
+          <li key={link.href} className="mt-6 flex">
             <ContactLink {...link} />
           </li>
         ))}

@@ -10,7 +10,7 @@ export default function Header() {
           className="w-96 mx-auto lg:mx-0 block max-w-[70%]"
           alt="avatar"
         />
-        <div className="lg:ml-11">
+        <div className="lg:ml-11 mt-8 lg:mt-0">
           <h1 className="text-xl lg:text-2xl font-bold -rotate-6 origin-bottom-left text-emerald">
             Hello 👋 i&apos;m Andrew
           </h1>
