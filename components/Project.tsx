@@ -11,6 +11,7 @@ export type TProject = {
   previewVideo?: string
   image: string | StaticImageData
   link: string
+  linkText?: string
 }
 
 export default function Project({
@@ -20,6 +21,7 @@ export default function Project({
   previewVideo,
   image,
   link,
+  linkText,
   className
 }: TProject & {className?: string}) {
   const videoRef = useRef<HTMLVideoElement | null>(null)
@@ -68,7 +70,7 @@ export default function Project({
         onFocus={() => videoRef.current?.play()}
         onBlur={() => videoRef.current?.pause()}
       >
-        View site
+        {linkText || 'View site'}
       </a>
     </article>
   )

@@ -1,62 +1,68 @@
-import squp from '../components/squaredup.png'
 import Project from './Project'
+import rocket from '@/public/rocket.png'
+import notepad from '@/public/notepad.png'
+import magGlass from '@/public/magnifying-glass.png'
+import galaxy from '@/public/galaxy.png'
+import spinner from '@/public/spinner.png'
+import dots from '@/public/dots.png'
+import metaballs from '@/public/metaballs.png'
 
 const projects = [
   {
     title: 'SVG Rocket Animation',
     description:
-      'A site i built and designed for a non-profit events company. With a custom built mix player. This was built mobile first.',
+      'A couple of looping animations i built ontop of illustrations created by a colleague.',
     technologies: 'SVG, GSAP',
-    image: squp,
+    image: rocket,
     link: 'https://codepen.io/andrewmumblebee/pen/abRobQx/ddbf198342c2161ebe12ae9555363b74',
+    linkText: 'View on CodePen'
   },
   {
     title: 'SVG Notepad Animation',
-    description:
-      'A site i built and designed for a non-profit events company. With a custom built mix player. This was built mobile first.',
     technologies: 'SVG, GSAP',
-    image: squp,
+    image: notepad,
     link: 'https://codepen.io/andrewmumblebee/pen/NWLoQxG/f3acde6728e8ea5ae7277c6c29c95c12',
+    linkText: 'View on CodePen'
   },
   {
     title: 'SVG Magnifying Glass Animation',
-    description:
-      'A site i built and designed for a non-profit events company. With a custom built mix player. This was built mobile first.',
     technologies: 'SVG, GSAP',
-    image: squp,
+    image: magGlass,
     link: 'https://codepen.io/andrewmumblebee/pen/vYzPjqY/434cbc72bc7c12a9213e7accf414cb70',
+    linkText: 'View on CodePen'
   },
   {
     title: 'Looping dots',
-    description:
-      'A site i built and designed for a non-profit events company. With a custom built mix player. This was built mobile first.',
     technologies: 'SVG, GSAP',
-    image: squp,
+    image: dots,
     link: 'https://codepen.io/andrewmumblebee/pen/OJEGMmX/9562dbad3530ef54f516d12fbd4680d6',
+    linkText: 'View on CodePen'
   },
   {
     title: 'Three.js Galaxy',
     description:
-      'A site i built and designed for a non-profit events company. With a custom built mix player. This was built mobile first.',
-    technologies: 'Next.js, TypeScript, GSAP, TailwindCSS, Audio APIs, AWS s3',
-    image: squp,
-    link: 'https://nightpeloton.com',
+      "Built using the ThreeJS Journey course. This was a lot of fun to build, and i'm still learning how to use ThreeJS.",
+    technologies: 'Three.js',
+    image: galaxy,
+    link: 'https://codepen.io/andrewmumblebee/pen/YzQEwVE/2f71cc20a0d11d29346029e19b7eb33d',
+    linkText: 'View on CodePen'
   },
   {
     title: 'Loading Spinner',
-    description: 'A looping spinner i designed.',
     technologies: 'CSS',
-    image: squp,
-    link: 'https://nightpeloton.com',
+    image: spinner,
+    link: 'https://codepen.io/andrewmumblebee/pen/rNyMPGJ/641144b5d52ba6e64b6199b8bc293762',
+    linkText: 'View on CodePen'
   },
   {
     title: 'CSS Metaballs',
     description:
       'A random thing i built ages ago when playing with metaballs using css filters',
     technologies: 'CSS',
-    image: squp,
-    link: 'https://nightpeloton.com',
-  },
+    image: metaballs,
+    link: 'https://codepen.io/andrewmumblebee/pen/JeBygj',
+    linkText: 'View on CodePen'
+  }
 ]
 
 export default function FunProjects() {
