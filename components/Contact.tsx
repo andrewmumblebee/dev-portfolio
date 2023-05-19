@@ -11,11 +11,11 @@ function ContactLink({
 }: {
   label: string
   href: string
-  icon?: string
+  icon: string
 }) {
   return (
     <a href={href} className="block">
-      <Image src={icon} className="inline-block mr-4" />
+      <Image src={icon} className="inline-block mr-4" alt="" />
       {label}
     </a>
   )
