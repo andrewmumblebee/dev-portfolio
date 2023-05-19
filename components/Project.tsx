@@ -32,7 +32,7 @@ export default function Project({
       <p className="text-grey mt-1">{technologies}</p>
       <a
         href={link}
-        className="text-emerald font-display hover:underline mt-3 inline-block"
+        className="text-emerald font-display focus:text-white hover:text-white transition-colors duration-200 mt-3 inline-block"
         rel="noreferrer noopener"
       >
         View site

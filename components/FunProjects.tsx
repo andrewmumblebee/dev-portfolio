@@ -64,7 +64,9 @@ export default function FunProjects() {
     <section id="fun" className="mt-24">
       <div className="container">
         <h2>Fun experiments</h2>
-        <p>Just a sample of things i&apos;ve built for fun</p>
+        <p className="text-xl">
+          Just a sample of things i&apos;ve built for fun
+        </p>
       </div>
       <div className="mt-8 flex overflow-auto container scrollbar">
         {projects.map((project, idx) => (

@@ -39,7 +39,7 @@ h1 {
 }
 
 h2 {
-  @apply text-7xl text-emerald font-display;
+  @apply text-5xl lg:text-7xl text-emerald font-display;
 }
 
 p {
@@ -57,7 +57,11 @@ ul {
 @supports (-webkit-text-stroke: 2px theme(colors.emerald)) {
   .highlight {
     @apply text-gunmetal;
-    -webkit-text-stroke: 2px theme(colors.emerald);
+    -webkit-text-stroke: 1px theme(colors.emerald);
+
+    @screen lg {
+      -webkit-text-stroke: 2px theme(colors.emerald);
+    }
   }
 }
 

@@ -9,9 +9,10 @@ module.exports = {
     screens: {
       sm: '640px',
       md: '768px',
-      lg: '1024px',
+      lg: `${1024 + 32 * 2}px`,
     },
     container: {
+      padding: '2rem',
       center: true,
     },
     extend: {
