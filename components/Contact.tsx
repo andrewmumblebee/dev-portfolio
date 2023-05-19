@@ -45,7 +45,7 @@ function ContactLink({
 }
 export default function Contact() {
   return (
-    <section id="contact" className="mt-24 mb-24 container">
+    <section id="contact" className="mt-24 mb-32 container">
       <h2>Contact</h2>
       <p className="max-w-prose">
         Please feel free to get in touch via email if you want a chat 😊
