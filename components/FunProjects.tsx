@@ -3,6 +3,7 @@ import rocket from '@/public/rocket.png'
 import notepad from '@/public/notepad.png'
 import magGlass from '@/public/magnifying-glass.png'
 import galaxy from '@/public/galaxy.png'
+import codeEditor from '@/public/code-editor.png'
 import spinner from '@/public/spinner.png'
 import dots from '@/public/dots.png'
 import metaballs from '@/public/metaballs.png'
@@ -25,9 +26,9 @@ const projects = [
     linkText: 'View Animation'
   },
   {
-    title: 'SVG code editor Animation',
+    title: 'SVG Code Editor Animation',
     technologies: 'SVG, GSAP',
-    image: magGlass,
+    image: codeEditor,
     link: '/illustrations/code-editor',
     linkText: 'View Animation'
   },
