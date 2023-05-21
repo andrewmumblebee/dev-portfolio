@@ -4,7 +4,7 @@ import Illustration from './rocket.svg'
 import {useRef} from 'react'
 import {useIsomorphicLayoutEffect} from 'usehooks-ts'
 
-export function rocketAnimation() {
+function rocketAnimation() {
   const tl = gsap.timeline({
     repeat: -1,
     repeatDelay: 1.5

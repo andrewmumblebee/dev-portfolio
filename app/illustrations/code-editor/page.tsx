@@ -18,7 +18,7 @@ function getDistanceBetweenPoints(
   }
 }
 
-export function codeEditorAnimation() {
+function codeEditorAnimation() {
   const tl = gsap.timeline({
     repeat: -1
   })
