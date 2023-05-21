@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.0.1",
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
     "@types/node": "20.1.7",
     "@types/react": "18.2.6",
@@ -18,12 +19,15 @@
     "classnames": "^2.3.2",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.2",
+    "gsap": "npm:@gsap/business@^3.11.5",
     "next": "13.4.2",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-responsive": "^9.0.2",
     "tailwindcss": "3.3.2",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "url-loader": "^4.1.1",
+    "usehooks-ts": "^2.9.1"
   }
 }

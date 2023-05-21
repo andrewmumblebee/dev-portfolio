@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import avatar from './avatar.svg'
+import avatar from './avatar.svg?url'
 
 export default function Header() {
   return (

@@ -14,22 +14,29 @@ const projects = [
       'A couple of looping animations i built ontop of illustrations created by a colleague.',
     technologies: 'SVG, GSAP',
     image: rocket,
-    link: 'https://codepen.io/andrewmumblebee/pen/abRobQx/ddbf198342c2161ebe12ae9555363b74',
-    linkText: 'View on CodePen'
+    link: '/illustrations/rocket',
+    linkText: 'View Animation'
   },
   {
     title: 'SVG Notepad Animation',
     technologies: 'SVG, GSAP',
     image: notepad,
-    link: 'https://codepen.io/andrewmumblebee/pen/NWLoQxG/f3acde6728e8ea5ae7277c6c29c95c12',
-    linkText: 'View on CodePen'
+    link: '/illustrations/notepad',
+    linkText: 'View Animation'
+  },
+  {
+    title: 'SVG code editor Animation',
+    technologies: 'SVG, GSAP',
+    image: magGlass,
+    link: '/illustrations/code-editor',
+    linkText: 'View Animation'
   },
   {
     title: 'SVG Magnifying Glass Animation',
     technologies: 'SVG, GSAP',
     image: magGlass,
-    link: 'https://codepen.io/andrewmumblebee/pen/vYzPjqY/434cbc72bc7c12a9213e7accf414cb70',
-    linkText: 'View on CodePen'
+    link: '/illustrations/magnifying-glass',
+    linkText: 'View Animation'
   },
   {
     title: 'Looping dots',

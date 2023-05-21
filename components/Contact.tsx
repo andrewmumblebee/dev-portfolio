@@ -1,7 +1,7 @@
-import github from '@/public/github.svg'
-import linkedin from '@/public/linkedin.svg'
-import mail from '@/public/mail.svg'
-import codepen from '@/public/codepen.svg'
+import github from '@/public/github.svg?url'
+import linkedin from '@/public/linkedin.svg?url'
+import mail from '@/public/mail.svg?url'
+import codepen from '@/public/codepen.svg?url'
 import Image from 'next/image'
 
 const links = [
