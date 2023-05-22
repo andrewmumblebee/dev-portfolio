@@ -9,6 +9,7 @@ export default function Header() {
           src={avatar}
           className="flex-[0_0_380px] w-[70%] mx-auto lg:mx-0 block max-w-[380px]"
           alt="avatar"
+          priority
         />
         <div className="lg:ml-11 mt-8 lg:mt-0">
           <h1 className="text-xl lg:text-2xl font-bold -rotate-6 origin-bottom-left text-emerald">
