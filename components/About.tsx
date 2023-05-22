@@ -5,7 +5,9 @@ export default function About() {
       <p className="max-w-prose text-xl">
         I&apos;m a developer based in London. With over 5 years of experience,
         over my career I&apos;ve had a chance to work on a spectrum of web
-        development. My heart lies in creating fun experiences on the web.
+        development.
+        <br />I love working on frontend experiences, but I&apos;m also
+        comfortable in the backend.
       </p>
     </section>
   )
