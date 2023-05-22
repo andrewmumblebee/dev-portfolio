@@ -8,38 +8,45 @@ const links = [
   {
     href: 'mailto:andrewceharris@gmail.com',
     label: 'andrewceharris@gmail.com',
-    icon: mail
+    icon: mail,
+    title: 'Email me'
   },
   {
     href: 'https://linkedin.com/in/andrew-harris-a0775410a',
     label: 'andrew-harris-a0775410a',
-    icon: linkedin
+    icon: linkedin,
+    title: 'View my LinkedIn profile'
   },
   {
     href: 'https://github.com/andrewmumblebee',
     label: 'andrewmumblebee',
-    icon: github
+    icon: github,
+    title: 'View my GitHub profile'
   },
   {
     href: 'https://codepen.io/andrewmumblebee',
     label: 'andrewmumblebee',
-    icon: codepen
+    icon: codepen,
+    title: 'View my CodePen profile'
   }
 ]
 
 function ContactLink({
   href,
   label,
-  icon
+  icon,
+  title
 }: {
   label: string
   href: string
   icon: string
+  title?: string
 }) {
   return (
     <a
       href={href}
       className="block focus:text-emerald hover:text-emerald transition-colors duration-200 flex items-start"
+      title={title}
     >
       <Image src={icon} className="inline-block mr-4" alt="" />
       {label}
