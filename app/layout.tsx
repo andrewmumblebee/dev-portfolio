@@ -3,6 +3,7 @@ import './globals.css'
 import { Urbanist } from 'next/font/google'
 import localFont from 'next/font/local'
 import { Analytics } from '@vercel/analytics/react'
+import AnimatedBackground from '@/components/AnimatedBackground'
 
 const urbanist = Urbanist({
   subsets: ['latin'],
@@ -32,6 +33,7 @@ export default function RootLayout({
           `${urbanist.variable} ${madeGentle.variable} font-body`
         )}
       >
+        <AnimatedBackground />
         {children}
         <Analytics />
       </body>
