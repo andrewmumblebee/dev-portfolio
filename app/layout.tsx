@@ -8,6 +8,9 @@ const urbanist = Urbanist({
   subsets: ['latin'],
   weight: ['400'],
   variable: '--font-body',
+  display: 'optional',
+  fallback: ['system-ui', 'sans-serif'],
+  preload: false,
 })
 const madeGentle = localFont({
   src: './MADE Gentle.otf',
