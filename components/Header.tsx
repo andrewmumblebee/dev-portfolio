@@ -16,8 +16,8 @@ export default function Header() {
             Hello 👋 i&apos;m Andrew
           </h1>
           <h2 className="text-5xl lg:text-6xl mt-2 text-white">
-            I&apos;m a <span className="highlight">software engineer</span> that
-            likes to make fun & creative experiences.
+            I&apos;m a <span className="highlight">software engineer</span> building
+            fun & creative experiences.
           </h2>
         </div>
       </div>
